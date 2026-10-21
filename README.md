@@ -31,7 +31,7 @@ Handed this repo by @ajdhoward? Good — you have everything you need to *start*
 
 ## Status
 
-🟡 **Initializing** — the private core is being built out (research compendium, decision matrices, simulations). Public bootstrap is v0 (fail-closed skeleton); the deployment payload lands in a later, approved phase.
+🟢 **Active build** — the private core now contains the completed research compendium (15 vertical OSS audits against a 158-repo evidence snapshot), the adopted architecture (Optimum Journey + 3 pivot paths), end-to-end simulations, and a working deployment payload v1 (platform spine + first tenant bundle). Authorized holders can deploy via `bootstrap.sh`. This public repo is licensed MIT (see `LICENSE`).
 
 ## Contact / access
 
