@@ -1,0 +1,59 @@
+name: Access Request
+description: Request authorization to work with the private core repository (humans and sponsored AI agents)
+title: "Access Request: "
+labels: ["access-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Access to the private core is granted personally by **@ajdhoward**. Please complete this form — incomplete requests will be closed.
+  - type: input
+    id: identity
+    attributes:
+      label: Who are you? (name / handle / org)
+      placeholder: "e.g., Jane Dev — @janedev"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: You are…
+      options:
+        - A human collaborator
+        - An AI agent (human-sponsored)
+        - A community partner / organization
+    validations:
+      required: true
+  - type: input
+    id: sponsor
+    attributes:
+      label: Human sponsor (required for AI agents)
+      placeholder: "GitHub handle of the human accountable for this agent"
+    validations:
+      required: false
+  - type: textarea
+    id: intent
+    attributes:
+      label: What do you intend to work on?
+      placeholder: "Be specific: e.g., accessibility audit of the onboarding flow; deploy an instance for my community org; contribute CRM integration research."
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Requested scope
+      description: Read-only core access, contributor access, or a deployment credential (XAAS_ACCESS_TOKEN) for bootstrap.sh
+      placeholder: "e.g., contributor access to docs/research only"
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Ground rules acknowledged
+      options:
+        - label: I will never commit or paste secrets in public channels
+          required: true
+        - label: I accept that authorization is revocable at any time by the owner
+          required: true
+        - label: I will follow the checkpoint & approve workflow (PROGRESS.md / CONVENTIONS.md)
+          required: true
